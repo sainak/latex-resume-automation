@@ -1,0 +1,13 @@
+**/*.pdf
+**/*.dvi
+**/*.log
+**/*.synctex*
+**/*.aux
+**/*.fdb_latexmk
+**/*.fls
+**/*.bbl
+**/*.blg
+**/*.out
+**/*.run.xml
+**/pdfa.xmpi
+**/*.synctex*
