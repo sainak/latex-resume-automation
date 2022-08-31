@@ -7,6 +7,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      GDRIVE_UPLOAD: "false"
     steps:
       - uses: actions/checkout@v3
         with:
@@ -33,7 +35,7 @@ jobs:
           folder: build
 
       - name: Upload Prep
-        if: "${{ secrets.CREDENTIALS_BASE64 != '' }}"
+        if: "${{env.GDRIVE_UPLOAD == 'true' }}"
         id: upload_prep
         run: |
           echo ${{ secrets.CREDENTIALS_BASE64 }} | base64 -d > credentials.json
@@ -45,7 +47,7 @@ jobs:
           echo "::set-output name=file_name::$FILE_NAME"
 
       - name: Upload to drive
-        if: "${{ secrets.CREDENTIALS_BASE64 != '' }}"
+        if: "${{env.GDRIVE_UPLOAD == 'true' }}"
         id: upload
         run: |
           pip install -r scripts/requirements.txt
