@@ -1,9 +1,9 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.7.1)  7 JUL 2022 12:56
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.8.8)  31 AUG 2022 07:51
  restricted system commands enabled.
  file:line:error style messages enabled.
 **resume.tex
 (./resume.tex
-LaTeX2e <2022-06-01> patch level 3
+LaTeX2e <2022-06-01> patch level 5
 Lua module: luaotfload 2022-06-15 3.22 Lua based OpenType font support
 Lua module: lualibs 2021-05-20 2.74 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2021-05-20 2.74 ConTeXt Lua libraries -- extended c
@@ -46,7 +46,7 @@ Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
-. L3 programming layer <2022-06-16>
+. L3 programming layer <2022-08-05>
 Inserting `tracingstacklevels' at position 1 in `input_level_string'. (./assets
 /altacv.cls
 Document Class: altacv 2021/10/04 AltaCV v1.6.4, yet another alternative class 
@@ -271,13 +271,13 @@ Package hyperref Info: 񑙰.񑙱:=1.4 on input line 240.
 \c@bookmark@seq@number=\count270
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 
 (/opt/texlive/texdir/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-86.
+85.
 )
 \Hy@SectionHShift=\skip49
 )
@@ -347,10 +347,10 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-06-16 L3 programming layer (loader) 
+Package: expl3 2022-08-05 L3 programming layer (loader) 
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
-File: l3backend-luatex.def 2022-04-20 L3 backend support: PDF output (LuaTeX)
+File: l3backend-luatex.def 2022-08-05 L3 backend support: PDF output (LuaTeX)
 \l__color_backend_stack_int=\count274
 \l__pdf_internal_box=\box51
 ))
@@ -385,14 +385,14 @@ LaTeX Font Info:    Trying to load font information for TU+fontawesomebrands on
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/fontawesome5/tufontawesomebrands.fd)))
  (/opt/texlive/texdir/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2022/05/01 v3.36 KOMA-Script package (file load hooks)
+Package: scrlfile 2022/07/04 v3.37 KOMA-Script package (file load hooks)
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
-Package: scrlfile-hook 2022/05/01 v3.36 KOMA-Script package (using LaTeX hooks)
+Package: scrlfile-hook 2022/07/04 v3.37 KOMA-Script package (using LaTeX hooks)
 
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/koma-script/scrlogo.sty
-Package: scrlogo 2022/05/01 v3.36 KOMA-Script package (logo)
+Package: scrlogo 2022/07/04 v3.37 KOMA-Script package (logo)
 )))
 (/opt/texlive/texdir/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
@@ -927,7 +927,7 @@ Package fontspec Info: Font family 'Lato(0)' created for font 'Lato' with
 
 (./assets/pubs-authoryear.cfg
 (/opt/texlive/texdir/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2022/06/22 v3.18 programmable bibliographies (PK/MW)
+Package: biblatex 2022/07/12 v3.18b programmable bibliographies (PK/MW)
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
@@ -997,7 +997,7 @@ Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/biblatex/blx-dm.def
-File: blx-dm.def 2022/06/22 v3.18 biblatex localization (PK/MW)
+File: blx-dm.def 2022/07/12 v3.18b biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'apa6.dbx' found.
@@ -1107,13 +1107,13 @@ Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2022/06/22 v3.18 biblatex compatibility (PK/MW)
+File: blx-compat.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2022/06/22 v3.18 biblatex compatibility (PK/MW)
+File: biblatex.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
 \c@textcitecount=\count454
 \c@textcitetotal=\count455
 \c@textcitemaxnames=\count456
@@ -1137,7 +1137,7 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2022/06/22 v3.18 biblatex bibliography style (PK/MW)
+File: standard.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count463
 \c@bbx:relatedtotal=\count464
 )
@@ -1191,12 +1191,13 @@ Package biblatex Info: LuaTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2022-06-16 L3 programming layer (loader) 
+(biblatex)             2022-08-05 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-Package: blx-case-expl3 2022/06/22 v3.18 expl3 case changing code for biblatex
+Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
+
 )))
 \@quotelevel=\count465
 \@quotereset=\count466
@@ -1358,7 +1359,7 @@ Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2022/06/22 v3.18 biblatex localization (PK/MW)
+File: english.lbx 2022/07/12 v3.18b biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'american' -> 'american-apa6'...
 
@@ -1370,12 +1371,12 @@ Package biblatex Info: Trying to load language 'american'...
 Package biblatex Info: ... file 'american.lbx' found.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/biblatex/lbx/american.lbx
-File: american.lbx 2022/06/22 v3.18 biblatex localization (PK/MW)
+File: american.lbx 2022/07/12 v3.18b biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2022/06/22 v3.18 biblatex localization (PK/MW)
+File: english.lbx 2022/07/12 v3.18b biblatex localization (PK/MW)
 ))))
 Package biblatex Info: LuaTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
@@ -1449,14 +1450,14 @@ Package logreq Info: Writing requests to 'resume.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43663 strings out of 477491
+ 43671 strings out of 477465
  156458,1977958 words of node,token memory allocated
  1838 words of node memory still in use:
    3 hlist, 8 vlist, 1 rule, 106 glue, 3 kern, 1 glyph, 116 attribute, 86 glue_s
 pec, 116 attribute_list, 2 write nodes
-   avail lists: 1:1,2:3438,3:2100,4:585,5:1334,6:271,7:11486,8:19,9:1887,10:11,1
+   avail lists: 1:1,2:3436,3:2100,4:585,5:1334,6:271,7:11486,8:19,9:1887,10:11,1
 1:572
- 63232 multiletter control sequences out of 65536+600000
+ 63266 multiletter control sequences out of 65536+600000
  58 fonts using 14949255 bytes
  125i,10n,113p,1130b,4284s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/texdir/texmf-dist/fonts/truetype/typoland/lato/Lato-Italic.ttf></o
