@@ -1,4 +1,4 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is 'build/resume.blg'
-[185] biber:340> INFO - === Wed Aug 31, 2022, 08:04:37
-[213] Biber.pm:418> INFO - Reading 'build/resume.bcf'
+[115] biber:340> INFO - === Wed Aug 31, 2022, 08:14:09
+[134] Biber.pm:418> INFO - Reading 'build/resume.bcf'
