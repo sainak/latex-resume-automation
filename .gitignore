@@ -8,6 +8,7 @@
 **/*.bbl
 **/*.blg
 **/*.out
-**/*.run.xml
 **/pdfa.xmpi
 **/*.synctex*
+.venv
+*.json

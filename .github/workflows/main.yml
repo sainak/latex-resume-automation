@@ -2,8 +2,6 @@ name: Build Resume
 
 on:
   push:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
@@ -14,19 +12,41 @@ jobs:
         with:
           submodules: true
 
-      - uses: xu-cheng/texlive-action/full@v1
+      - name: Generate PDF
+        uses: xu-cheng/texlive-action/full@v1
         with:
           run: |
             apk add make
             make
 
-      - uses: actions/upload-artifact@v3
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
         with:
           name: resume
           path: build/resume.pdf
 
-      - name: Deploy
+      - name: Deploy to pages
+        if: github.ref == 'refs/heads/main'
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           branch: gh-pages
           folder: build
+
+      - name: Upload Prep
+        if: "${{ secrets.CREDENTIALS_BASE64 != '' }}"
+        id: upload_prep
+        run: |
+          echo ${{ secrets.CREDENTIALS_BASE64 }} | base64 -d > credentials.json
+          FILE_NAME=resume.pdf
+          if [ "$GITHUB_REF_NAME" != "main" ]; then
+              FILE_NAME=resume-$GITHUB_REF_NAME.pdf
+              mv build/resume.pdf build/$FILE_NAME
+          fi
+          echo "::set-output name=file_name::$FILE_NAME"
+
+      - name: Upload to drive
+        if: "${{ secrets.CREDENTIALS_BASE64 != '' }}"
+        id: upload
+        run: |
+          pip install -r scripts/requirements.txt
+          python scripts/upload.py ${{ secrets.FOLDER_ID }} credentials.json build/${{ steps.upload_prep.outputs.file_name }}
